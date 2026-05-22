@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 96" role="img" aria-labelledby="title desc">
+  <title id="title">Statepath symbol dark</title>
+  <desc id="desc">A stepped route symbol reversed for dark use with off-white line work and cobalt destination.</desc>
+  <rect width="132" height="96" rx="18" fill="#0D1B2A"/>
+  <circle cx="18" cy="72" r="8" fill="#F7F8FA"/>
+  <path d="M30 72H52V48H80V24H106" fill="none" stroke="#F7F8FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="118" cy="24" r="8" fill="#3B6BDB"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <rect x="170" y="228" width="320" height="232" rx="28" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <path d="M222 292H438" stroke="#F7F4EF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M222 344H410" stroke="#F7F4EF" stroke-opacity="0.66" stroke-width="10" stroke-linecap="round"/>
+  <path d="M222 396H374" stroke="#F7F4EF" stroke-opacity="0.42" stroke-width="10" stroke-linecap="round"/>
+  <path d="M520 346C602 286 690 282 776 328C862 374 950 374 1034 320" stroke="#7FB0FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="520" cy="346" r="22" fill="#F7F4EF"/>
+  <circle cx="776" cy="328" r="22" fill="#F7F4EF"/>
+  <circle cx="1034" cy="320" r="22" fill="#F7F4EF"/>
+  <rect x="1090" y="212" width="330" height="310" rx="30" fill="#13263A" stroke="#CDB68D" stroke-width="6"/>
+  <path d="M1154 288H1356" stroke="#F7F4EF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1154 348H1320" stroke="#F7F4EF" stroke-opacity="0.7" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1154 404H1280" stroke="#F7F4EF" stroke-opacity="0.44" stroke-width="10" stroke-linecap="round"/>
+  <rect x="1154" y="444" width="138" height="30" rx="10" fill="#7FB0FF" fill-opacity="0.28"/>
+  <path d="M600 560C698 520 820 520 930 560" stroke="#CDB68D" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">AUDIT ROUTE</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">One fixed-fee audit. One legible pack. One next route.</text>
+</svg>

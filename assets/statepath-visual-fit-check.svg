@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <rect x="184" y="214" width="380" height="350" rx="28" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <path d="M244 292H496" stroke="#F7F4EF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M244 356H470" stroke="#F7F4EF" stroke-opacity="0.72" stroke-width="10" stroke-linecap="round"/>
+  <path d="M244 420H432" stroke="#F7F4EF" stroke-opacity="0.54" stroke-width="10" stroke-linecap="round"/>
+  <rect x="244" y="468" width="188" height="34" rx="10" fill="#7FB0FF" fill-opacity="0.22"/>
+  <path d="M654 390C742 320 838 308 926 354C1014 400 1094 400 1174 352" stroke="#7FB0FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="654" cy="390" r="22" fill="#F7F4EF"/>
+  <circle cx="926" cy="354" r="22" fill="#F7F4EF"/>
+  <circle cx="1174" cy="352" r="22" fill="#F7F4EF"/>
+  <rect x="1098" y="468" width="204" height="110" rx="24" fill="#13263A" stroke="#CDB68D" stroke-width="6"/>
+  <path d="M1152 526L1210 572L1262 492" stroke="#F7F4EF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">FIT CHECK</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">Minimum context first. No wide access handover upfront.</text>
+</svg>

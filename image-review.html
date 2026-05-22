@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Statepath Image Review Helper | Non-public asset review surface</title>
+  <meta name="description" content="Non-public helper page for reviewing imported Statepath visual concepts before any asset is placed on the live site.">
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #08131d;
+      --panel: rgba(255,255,255,0.06);
+      --panel-strong: rgba(255,255,255,0.09);
+      --line: rgba(255,255,255,0.14);
+      --ink: #f6f7fb;
+      --muted: rgba(246,247,251,0.72);
+      --accent: #7fb0ff;
+      --ok: #9ad0a8;
+      --warn: #d7be90;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        linear-gradient(rgba(8, 19, 29, 0.86), rgba(8, 19, 29, 0.92)),
+        url("./assets/statepath-site-background.png") center center / cover no-repeat fixed;
+      color: var(--ink);
+      line-height: 1.65;
+      padding: 32px 20px 60px;
+    }
+
+    .shell {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .hero,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.22);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1,
+    .panel h2,
+    .card h3 {
+      margin: 0 0 10px;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 60px);
+      max-width: 12ch;
+    }
+
+    .eyebrow,
+    .label {
+      display: inline-block;
+      margin: 0 0 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .hero p,
+    .panel p,
+    .panel li,
+    .card li {
+      color: var(--muted);
+    }
+
+    .summary-grid,
+    .review-grid,
+    .next-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .summary-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 22px;
+    }
+
+    .summary-box {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--panel-strong);
+    }
+
+    .summary-box strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    .panel {
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .review-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.04);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .card-body {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .card ul,
+    .panel ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      width: fit-content;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .status.pending { color: var(--warn); }
+    .status.ready { color: var(--ok); }
+
+    code {
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: var(--ink);
+    }
+
+    .next-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 1100px) {
+      .review-grid,
+      .summary-grid,
+      .next-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <p class="eyebrow">Non-public helper surface</p>
+      <h1>Review imported images before they are placed on the live Statepath site.</h1>
+      <p>This page is a controlled asset-review surface. It is not part of the seven-page public route, it is not linked from the live navigation, and it does not prove that any image has been approved for public use.</p>
+
+      <div class="summary-grid">
+        <div class="summary-box">
+          <span class="label">Public route</span>
+          <strong>The live website remains the fixed seven-page system.</strong>
+        </div>
+        <div class="summary-box">
+          <span class="label">Under review now</span>
+          <strong>Three imported ChatGPT visuals retained only as helper review artifacts, not premium live-route candidates.</strong>
+        </div>
+        <div class="summary-box">
+          <span class="label">Use rule</span>
+          <strong>Review here first. Place only after approval. Otherwise leave the live site unchanged.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">Imported concepts</p>
+      <h2>These imported concepts are parked only for helper review history. They are not part of the premium live route.</h2>
+      <div class="review-grid">
+        <article class="card">
+          <div class="card-body">
+            <div>
+              <span class="label">Imported review artifact</span>
+              <h3>Inherited build</h3>
+              <p>Matches the Statepath issue: <strong>“The codebase changed hands, but the documentation never caught up.”</strong> It is now retained only as a non-public review reference.</p>
+            </div>
+            <ul>
+              <li><strong>Phase 4 rule:</strong> excluded from the premium live route</li>
+              <li><strong>Allowed role now:</strong> helper-only review history</li>
+              <li><strong>Later design implication:</strong> any future situation imagery should come from owned or later-directed asset work instead</li>
+            </ul>
+            <span class="status pending">Excluded from premium live route</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <div>
+              <span class="label">Imported review artifact</span>
+              <h3>AI-built drift</h3>
+              <p>Matches the Statepath issue: <strong>“More was generated than properly understood.”</strong> It is now retained only as a non-public review reference.</p>
+            </div>
+            <ul>
+              <li><strong>Phase 4 rule:</strong> excluded from the premium live route</li>
+              <li><strong>Allowed role now:</strong> helper-only review history</li>
+              <li><strong>Later design implication:</strong> any future situation imagery should come from owned or later-directed asset work instead</li>
+            </ul>
+            <span class="status pending">Excluded from premium live route</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <div>
+              <span class="label">Imported review artifact</span>
+              <h3>Automation tangle</h3>
+              <p>Matches the Statepath issue: <strong>“Scripts and integrations now contradict each other.”</strong> It is now retained only as a non-public review reference.</p>
+            </div>
+            <ul>
+              <li><strong>Phase 4 rule:</strong> excluded from the premium live route</li>
+              <li><strong>Allowed role now:</strong> helper-only review history</li>
+              <li><strong>Later design implication:</strong> any future situation imagery should come from owned or later-directed asset work instead</li>
+            </ul>
+            <span class="status pending">Excluded from premium live route</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">What still needs visual decisions</p>
+      <h2>These are the remaining gaps after these three are either approved, adjusted, or rejected.</h2>
+      <div class="next-grid">
+        <div>
+          <span class="label">Canonical situation gaps</span>
+          <ul>
+            <li>decision pressure</li>
+            <li>team stall</li>
+          </ul>
+        </div>
+        <div>
+          <span class="label">Support-page gaps</span>
+          <ul>
+            <li>sample output / redacted report style imagery</li>
+            <li>trust &amp; access imagery</li>
+            <li>any stronger proof-system visuals for homepage support sections</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">What this now means</p>
+      <h2>These imported ChatGPT visuals are no longer candidates for the premium live route.</h2>
+      <ul>
+        <li>The premium public route should rely on owned lockups, owned symbols, the favicon, controlled diagrammatic styling, and later directed asset work instead.</li>
+        <li>The current home-banner family remains provisional rather than fully committed.</li>
+        <li>This page remains helper-only and non-public: it records review history without implying imported visuals belong on the premium live route.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <path d="M228 424C318 366 402 314 474 314C548 314 618 392 696 392C774 392 850 284 932 284C1014 284 1080 394 1166 394C1232 394 1290 340 1362 292" stroke="#7FB0FF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="170" y="366" width="116" height="116" rx="24" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <rect x="426" y="256" width="116" height="116" rx="24" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <rect x="682" y="334" width="116" height="116" rx="24" fill="#13263A" stroke="#CDB68D" stroke-width="6"/>
+  <rect x="938" y="226" width="116" height="116" rx="24" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <rect x="1194" y="336" width="116" height="116" rx="24" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <text x="214" y="438" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">01</text>
+  <text x="470" y="328" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">02</text>
+  <text x="726" y="406" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">03</text>
+  <text x="982" y="298" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">04</text>
+  <text x="1238" y="408" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">05</text>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">CONTROLLED PROCESS</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">Fit, scope lock, access, review, and one next route.</text>
+</svg>

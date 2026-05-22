@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Statepath Process — Ingest, analyse, verify, report</title>
+  <meta name="description" content="Read how Statepath handles fit, scope, access, read-only review, and decision-ready delivery without smuggling in a broader engagement.">
+  <meta name="theme-color" content="#0b1420">
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem('statepath-theme') || 'auto';
+        const effective = theme === 'auto'
+          ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+          : theme;
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-effective-theme', effective);
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'auto');
+        document.documentElement.setAttribute('data-effective-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="icon" href="./assets/statepath-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./theme.js" defer></script>
+</head>
+<body class="sp2-world-process-chain">
+  <div class="sp2-page sp2-page-process">
+    <header class="sp2-header">
+      <div class="sp2-header-inner">
+        <a class="sp2-brand" href="./index.html" aria-label="Statepath home">
+          <img class="sp2-logo-light" src="./assets/statepath-lockup-light.svg" alt="Statepath">
+          <img class="sp2-logo-dark" src="./assets/statepath-lockup-dark.svg" alt="Statepath">
+        </a>
+
+        <nav class="sp2-nav" aria-label="Primary navigation">
+          <a href="./offer.html">Offer</a>
+          <a href="./situations.html">Situations</a>
+          <a href="./process.html" aria-current="page">Process</a>
+          <a href="./sample-output.html">Sample Output</a>
+          <a href="./trust-access.html">Trust &amp; Access</a>
+        </nav>
+
+        <div class="sp2-header-tools">
+          <div class="sp2-theme-toggle" role="group" aria-label="Theme switcher">
+            <button class="sp2-theme-button" type="button" data-theme-choice="light">Light</button>
+            <button class="sp2-theme-button" type="button" data-theme-choice="dark">Dark</button>
+            <button class="sp2-theme-button" type="button" data-theme-choice="auto">Auto</button>
+          </div>
+          <a class="sp2-button sp2-button-ghost" href="./start-here.html">Request a fit check</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="sp2-main">
+      <section class="sp2-hero">
+        <div class="sp2-hero-grid">
+          <div>
+            <p class="sp2-eyebrow">Process</p>
+            <h1>How Statepath keeps the route finite, legible, and low theatre.</h1>
+            <p class="sp2-lede">The process is designed to make the current state readable, keep access proportionate, and return one decision-ready route without blurring into a much larger engagement.</p>
+            <div class="sp2-actions">
+              <a class="sp2-button sp2-button-primary" href="./start-here.html">Request a fit check</a>
+              <a class="sp2-button sp2-button-secondary" href="./sample-output.html">See a sample output</a>
+            </div>
+
+            <div class="sp2-stat-grid">
+              <div class="sp2-stat">
+                <span class="sp2-label">Access</span>
+                <strong>Read-only preferred where possible.</strong>
+              </div>
+              <div class="sp2-stat">
+                <span class="sp2-label">Scope</span>
+                <strong>Agreed surfaces only.</strong>
+              </div>
+              <div class="sp2-stat">
+                <span class="sp2-label">Closeout</span>
+                <strong>Temporary access removed at closeout.</strong>
+              </div>
+            </div>
+          </div>
+
+          <aside class="sp2-panel sp2-panel-media">
+            <p class="sp2-eyebrow">Working posture</p>
+            <a class="sp2-panel-link sp2-media-card" href="#working-sequence">
+              <div class="sp2-media-frame">
+                <img class="sp2-media-image" src="./assets/statepath-visual-process-route.svg" alt="Process route illustration">
+              </div>
+              <div class="sp2-media-body">
+                <span class="sp2-label">Five-step route</span>
+                <h3>Fit, scope, access, review, and one next route shown as one controlled sequence.</h3>
+                <p>The process is designed to stop sprawl, over-access, and confidence-heavy guessing before they compound.</p>
+                <span class="sp2-link-cta">Jump to working sequence</span>
+              </div>
+            </a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="sp2-section" id="working-sequence">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">Working sequence</p>
+            <h2>The route should feel deliberate, not chaotic.</h2>
+          </div>
+          <p class="sp2-section-note">Each step exists to keep scope tight and the result decision-grade.</p>
+        </div>
+
+        <div class="sp2-steps">
+          <article class="sp2-step">
+            <span class="sp2-step-number">01</span>
+            <div>
+              <h3>Short fit call</h3>
+              <p>Check there is a real project, a real confusion point, and a bounded reason to investigate before anything heavier starts.</p>
+            </div>
+          </article>
+
+          <article class="sp2-step">
+            <span class="sp2-step-number">02</span>
+            <div>
+              <h3>Proposal and scope lock</h3>
+              <p>Agree exactly what will be reviewed and what stays outside the audit so the work does not quietly sprawl.</p>
+            </div>
+          </article>
+
+          <article class="sp2-step">
+            <span class="sp2-step-number">03</span>
+            <div>
+              <h3>Access and onboarding</h3>
+              <p>Use the minimum practical access route, with read-only access preferred where possible.</p>
+            </div>
+          </article>
+
+          <article class="sp2-step">
+            <span class="sp2-step-number">04</span>
+            <div>
+              <h3>Audit and review</h3>
+              <p>Inspect the agreed surfaces, separate what is direct, derived, or unresolved, and assemble the decision pack without blurring those truth states together.</p>
+            </div>
+          </article>
+
+          <article class="sp2-step">
+            <span class="sp2-step-number">05</span>
+            <div>
+              <h3>Return one next route</h3>
+              <p>Deliver one sensible next move. If a bounded corrective lane is found, it can be quoted separately. If the truth points to something broader, the broader route is named explicitly instead of blurred.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sp2-section">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">What gets checked</p>
+            <h2>The audit checks the agreed surfaces, their contradictions, and the decision risk around them.</h2>
+          </div>
+          <p class="sp2-section-note">Process is not just sequence. It also defines what Statepath is actually looking for inside the named repo, docs, dashboards, automations, and handover material.</p>
+        </div>
+
+        <div class="sp2-proof-grid">
+          <article class="sp2-card">
+            <span class="sp2-label">Surface group one</span>
+            <h3>Repo, code, and implementation surfaces</h3>
+            <p>Review the parts of the live build, scripts, configuration, or automation logic that are actually in scope for the decision.</p>
+          </article>
+
+          <article class="sp2-card">
+            <span class="sp2-label">Surface group two</span>
+            <h3>Docs, handover notes, and operating story</h3>
+            <p>Check whether the current explanation still matches the current implementation or whether the narrative has drifted from the truth on disk.</p>
+          </article>
+
+          <article class="sp2-card">
+            <span class="sp2-label">Surface group three</span>
+            <h3>Dashboards, flows, and live-route behaviour</h3>
+            <p>Inspect the named dashboards, integrations, exports, or flow surfaces that matter to the actual decision instead of assuming the route lives only in code.</p>
+          </article>
+
+          <article class="sp2-card">
+            <span class="sp2-label">Surface group four</span>
+            <h3>Contradictions, blockers, and decision risk</h3>
+            <p>Look for the specific gaps, conflicts, or fragile assumptions that would make the next wrong move expensive if they remain unresolved.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sp2-section sp2-section-quiet">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">What this prevents</p>
+            <h2>The method is designed to stop three predictable failures before they compound.</h2>
+          </div>
+          <p class="sp2-section-note">Premium process should feel safer because the route blocks avoidable sprawl, over-access, and confidence-heavy guesswork before they become expensive.</p>
+        </div>
+
+        <div class="sp2-card-grid sp2-card-grid-3">
+          <article class="sp2-card">
+            <span class="sp2-label">Failure one</span>
+            <h3>Scope drift before truth exists.</h3>
+            <p>Without a fixed sequence, the work quietly expands from one bounded audit into broad rescue labour before the baseline has even been made legible.</p>
+          </article>
+
+          <article class="sp2-card sp2-card-accent">
+            <span class="sp2-label">Failure two</span>
+            <h3>Too much access before real need is proven.</h3>
+            <p>The process keeps access proportionate so the review can stay serious and bounded instead of defaulting to “give us everything” by habit.</p>
+          </article>
+
+          <article class="sp2-card">
+            <span class="sp2-label">Failure three</span>
+            <h3>A recommendation that outruns what the surfaces actually prove.</h3>
+            <p>The sequence forces confirmed truth, caveats, and one next route into the same pack so the answer stays decision-grade rather than confidence-heavy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sp2-section">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">Truth labels</p>
+            <h2>The pack keeps direct, derived, and unresolved material separate on purpose.</h2>
+          </div>
+          <p class="sp2-section-note">This is the discipline that stops a tidy summary from over-claiming what the agreed surfaces can really prove.</p>
+        </div>
+
+        <div class="sp2-card-grid sp2-card-grid-3">
+          <article class="sp2-card">
+            <span class="sp2-label">Label one</span>
+            <h3>Direct</h3>
+            <p>Use direct when the agreed surfaces themselves clearly support the claim without extra interpretation doing the real work.</p>
+          </article>
+
+          <article class="sp2-card sp2-card-accent">
+            <span class="sp2-label">Label two</span>
+            <h3>Derived</h3>
+            <p>Use derived when the route needs reasoned interpretation across multiple signals, even if that interpretation is sensible and well-supported.</p>
+          </article>
+
+          <article class="sp2-card">
+            <span class="sp2-label">Label three</span>
+            <h3>Unresolved</h3>
+            <p>Use unresolved when the current surfaces cannot prove the point cleanly enough yet and caution still belongs in the recommendation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sp2-section sp2-section-quiet">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">Trust and privacy</p>
+            <h2>Operate with the minimum access needed, and keep the route inspectable.</h2>
+          </div>
+          <p class="sp2-section-note">Minimum access, agreed surfaces, and a clean closeout matter more than looking busy.</p>
+        </div>
+
+        <div class="sp2-split">
+          <article class="sp2-card">
+            <span class="sp2-label">Access posture</span>
+            <ul class="sp2-clean-list">
+              <li>read-only access is preferred where possible</li>
+              <li>only the agreed in-scope materials should be used</li>
+              <li>temporary access is preferred to shared personal credentials</li>
+              <li>access should be removed at closeout</li>
+            </ul>
+          </article>
+
+          <article class="sp2-card sp2-card-accent">
+            <span class="sp2-label">AI-assisted work posture</span>
+            <p>Client secrets, credentials, private code, sensitive personal data, or confidential commercial material should not be placed into third-party AI tools unless explicitly agreed in writing for that engagement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sp2-section">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">Best first note</p>
+            <h2>The strongest first contact is short and concrete.</h2>
+          </div>
+          <p class="sp2-section-note">The goal is enough context to judge fit, not a novel.</p>
+        </div>
+
+        <div class="sp2-split">
+          <article class="sp2-card sp2-card-accent">
+            <span class="sp2-label">Include</span>
+            <ul class="sp2-clean-list">
+              <li>the project</li>
+              <li>the confusion point</li>
+              <li>why the wrong next move matters</li>
+            </ul>
+            <div class="sp2-actions">
+              <a class="sp2-button sp2-button-primary" href="./start-here.html">Request a fit check</a>
+            </div>
+          </article>
+
+          <article class="sp2-card">
+            <span class="sp2-label">After the audit</span>
+            <h3>If one clearly bounded corrective route exists, it can move forward cleanly.</h3>
+            <p>That follow-through lane is quoted separately at £1,500 fixed. If the truth points to something broader, the broader route is re-scoped explicitly rather than being smuggled into the original engagement.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sp2-section sp2-section-quiet">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">Output delivery boundary</p>
+            <h2>The first delivery ends with a pack and one bounded route, not a hidden implementation commitment.</h2>
+          </div>
+          <p class="sp2-section-note">This is where the process turns into a usable handover: clear enough to act, but still honest about what belongs inside the first step and what remains separate.</p>
+        </div>
+
+        <div class="sp2-compare-grid">
+          <article class="sp2-compare sp2-compare-good">
+            <span class="sp2-label">Included in delivery</span>
+            <h3>One decision-ready audit pack</h3>
+            <ul class="sp2-clean-list">
+              <li>first-read summary</li>
+              <li>current-state truth map</li>
+              <li>risk and caveat notes</li>
+              <li>one bounded next-route recommendation</li>
+            </ul>
+          </article>
+
+          <article class="sp2-compare sp2-compare-bad">
+            <span class="sp2-label">Separate by design</span>
+            <h3>Anything broader than the first step</h3>
+            <ul class="sp2-clean-list">
+              <li>open-ended implementation labour</li>
+              <li>permanent support expectations</li>
+              <li>broad rescue work hidden inside the audit</li>
+              <li>follow-through unless one bounded corrective lane is clearly justified</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="sp2-callout">If one clearly bounded corrective lane exists, optional follow-through can be quoted separately. If not, the broader route must be re-scoped explicitly rather than implied by the audit pack.</div>
+      </section>
+
+      <section class="sp2-section sp2-section-dark">
+        <div class="sp2-section-header">
+          <div>
+            <p class="sp2-eyebrow">Linked pages</p>
+            <h2>Use the page that answers the next question instead of forcing everything into one slab.</h2>
+          </div>
+          <p class="sp2-section-note">That is the whole point of the new structure.</p>
+        </div>
+
+        <div class="sp2-link-grid">
+          <a class="sp2-link-card sp2-media-card" href="./offer.html">
+            <div class="sp2-media-frame">
+              <img class="sp2-media-image" src="./assets/statepath-visual-audit-route.svg" alt="Audit route illustration">
+            </div>
+            <span class="sp2-label">Offer</span>
+            <h3>See the fixed-fee structure and scope boundary.</h3>
+            <p>Lead fee, follow-through lane, included outputs, and what is intentionally out of scope.</p>
+            <span class="sp2-link-cta">Open Offer</span>
+          </a>
+
+          <a class="sp2-link-card sp2-media-card" href="./situations.html">
+            <div class="sp2-media-frame">
+              <img class="sp2-media-image" src="./assets/statepath-visual-situation-system.svg" alt="Situation system illustration">
+            </div>
+            <span class="sp2-label">Situations</span>
+            <h3>Check whether the route fits the project.</h3>
+            <p>Inherited builds, AI-heavy drift, automation tangles, and decision-pressure signals.</p>
+            <span class="sp2-link-cta">Open Situations</span>
+          </a>
+
+          <a class="sp2-link-card sp2-media-card" href="./sample-output.html">
+            <div class="sp2-media-frame">
+              <img class="sp2-media-image" src="./assets/statepath-visual-decision-pack.svg" alt="Decision pack illustration">
+            </div>
+            <span class="sp2-label">Sample Output</span>
+            <h3>See the decision-pack shape before any scope handover starts.</h3>
+            <p>Review the truth-map, risk-note, and next-route structure that the process is designed to produce.</p>
+            <span class="sp2-link-cta">Open Sample Output</span>
+          </a>
+
+          <a class="sp2-link-card sp2-media-card" href="./trust-access.html">
+            <div class="sp2-media-frame">
+              <img class="sp2-media-image" src="./assets/statepath-visual-trust-boundary.svg" alt="Trust boundary illustration">
+            </div>
+            <span class="sp2-label">Trust &amp; Access</span>
+            <h3>Read the access boundary and review posture.</h3>
+            <p>See how Statepath handles agreed surfaces, read-only preference, and closeout before anything starts.</p>
+            <span class="sp2-link-cta">Open Trust &amp; Access</span>
+          </a>
+
+          <a class="sp2-link-card sp2-media-card" href="./start-here.html">
+            <div class="sp2-media-frame">
+              <img class="sp2-media-image" src="./assets/statepath-visual-fit-check.svg" alt="Fit-check illustration">
+            </div>
+            <span class="sp2-label">Start Here</span>
+            <h3>Use the fit-check route that now lives on-site.</h3>
+            <p>Send the project, confusion point, and why the wrong next move matters from a dedicated page.</p>
+            <span class="sp2-link-cta">Open Start Here</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sp2-footer">
+      <div class="sp2-footer-shell">
+        <div class="sp2-footer-grid">
+          <div>
+            <p class="sp2-eyebrow">Statepath</p>
+            <h2>Truth Audit + Next Route Pack</h2>
+            <p class="sp2-footer-copy">Fixed-fee technical truth audit for projects that have become hard to trust.</p>
+            <div class="sp2-footer-cta">
+              <a class="sp2-button sp2-button-primary" href="./start-here.html#fit-check-form">Request a fit check</a>
+              <a class="sp2-button sp2-button-ghost" href="./sample-output.html">See a sample output</a>
+            </div>
+          </div>
+
+          <div>
+            <span class="sp2-label">Explore</span>
+            <div class="sp2-footer-links">
+              <a href="./index.html">Home</a>
+              <a href="./offer.html">Offer</a>
+              <a href="./situations.html">Situations</a>
+              <a href="./process.html">Process</a>
+              <a href="./sample-output.html">Sample Output</a>
+              <a href="./trust-access.html">Trust &amp; Access</a>
+              <a href="./start-here.html">Start Here</a>
+            </div>
+          </div>
+
+          <div>
+            <span class="sp2-label">Contact</span>
+            <div class="sp2-footer-links">
+              <a href="mailto:james@statepath.co.uk?subject=Statepath%20fit%20check&body=Project:%0AConfusion%20point:%0AWhy%20the%20wrong%20next%20move%20matters:%0AExisting%20surfaces:%0A">james@statepath.co.uk</a>
+              <a href="./start-here.html#fit-check-form">Open Start Here</a>
+              <span>Read-only preferred where possible.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

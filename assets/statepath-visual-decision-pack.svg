@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <rect x="242" y="250" width="352" height="286" rx="28" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <rect x="506" y="214" width="352" height="286" rx="28" fill="#13263A" stroke="#CDB68D" stroke-width="6"/>
+  <rect x="770" y="250" width="352" height="286" rx="28" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <path d="M320 332H514" stroke="#F7F4EF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M320 386H470" stroke="#F7F4EF" stroke-opacity="0.62" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="628" cy="328" r="18" fill="#F7F4EF"/>
+  <circle cx="706" cy="372" r="18" fill="#F7F4EF"/>
+  <circle cx="784" cy="316" r="18" fill="#F7F4EF"/>
+  <path d="M628 328L706 372L784 316" stroke="#7FB0FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="844" y="318" width="178" height="26" rx="8" fill="#F7F4EF" fill-opacity="0.9"/>
+  <rect x="844" y="368" width="126" height="26" rx="8" fill="#F7F4EF" fill-opacity="0.44"/>
+  <rect x="844" y="418" width="212" height="28" rx="8" fill="#7FB0FF" fill-opacity="0.22"/>
+  <path d="M1184 298C1256 332 1310 374 1350 432" stroke="#CDB68D" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">DECISION PACK</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">Truth map, risk notes, and one decision-grade route.</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <path d="M250 340C334 296 418 296 502 340C586 384 670 384 754 340C838 296 922 296 1006 340C1090 384 1174 384 1258 340" stroke="#7FB0FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="260" cy="340" r="64" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <circle cx="510" cy="340" r="64" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <circle cx="760" cy="340" r="72" fill="#13263A" stroke="#CDB68D" stroke-width="6"/>
+  <circle cx="1010" cy="340" r="64" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <circle cx="1260" cy="340" r="64" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <path d="M760 414V556" stroke="#F7F4EF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="610" y="556" width="300" height="132" rx="24" fill="#13263A" stroke="#CDB68D" stroke-width="6"/>
+  <path d="M666 612H854" stroke="#F7F4EF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M666 654H808" stroke="#F7F4EF" stroke-opacity="0.56" stroke-width="10" stroke-linecap="round"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">SITUATION SYSTEM</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">Five recurring signals. One fit judgment before the next move.</text>
+</svg>

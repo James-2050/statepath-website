@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <rect x="180" y="220" width="380" height="250" rx="28" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <path d="M220 290H520" stroke="#E9EEF5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M220 342H470" stroke="#E9EEF5" stroke-opacity="0.72" stroke-width="10" stroke-linecap="round"/>
+  <path d="M220 394H430" stroke="#E9EEF5" stroke-opacity="0.52" stroke-width="10" stroke-linecap="round"/>
+  <path d="M690 310C760 250 845 240 920 280C995 320 1068 318 1144 270" stroke="#7FB0FF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="690" cy="310" r="22" fill="#F7F4EF"/>
+  <circle cx="920" cy="280" r="22" fill="#F7F4EF"/>
+  <circle cx="1144" cy="270" r="22" fill="#F7F4EF"/>
+  <path d="M720 520C798 468 892 468 970 520" stroke="#CDB68D" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="700">INHERITED BUILD</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">The code changed hands. The truth did not arrive with it.</text>
+</svg>

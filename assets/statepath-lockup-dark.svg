@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 220" role="img" aria-labelledby="title desc">
+  <title id="title">Statepath lockup dark</title>
+  <desc id="desc">Statepath symbol and wordmark lockup reversed for dark backgrounds.</desc>
+  <rect width="1180" height="220" rx="24" fill="#0D1B2A"/>
+  <g transform="translate(34 58) scale(1.45)">
+    <circle cx="18" cy="72" r="8" fill="#F7F8FA"/>
+    <path d="M30 72H52V48H80V24H106" fill="none" stroke="#F7F8FA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="118" cy="24" r="8" fill="#3B6BDB"/>
+  </g>
+  <text x="240" y="142" fill="#F7F8FA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="116" font-weight="400" letter-spacing="-4">Statepath</text>
+</svg>

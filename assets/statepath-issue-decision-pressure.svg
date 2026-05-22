@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <path d="M800 190L1020 620H580L800 190Z" fill="#13263A" stroke="#CDB68D" stroke-width="8"/>
+  <path d="M800 320V470" stroke="#F7F4EF" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="800" cy="548" r="16" fill="#F7F4EF"/>
+  <path d="M260 700C410 628 540 594 800 584C1060 574 1190 612 1340 700" stroke="#7FB0FF" stroke-width="8" stroke-dasharray="20 18"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="700">DECISION PRESSURE</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">The next wrong move would cost time, money, or trust.</text>
+</svg>

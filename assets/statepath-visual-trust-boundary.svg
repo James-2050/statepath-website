@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" rx="48" fill="#0D1B2A"/>
+  <rect x="52" y="52" width="1496" height="896" rx="32" stroke="rgba(247,244,239,0.16)" stroke-width="4"/>
+  <rect x="188" y="190" width="1224" height="470" rx="34" fill="#13263A" stroke="#7FB0FF" stroke-width="6"/>
+  <rect x="258" y="258" width="428" height="286" rx="26" fill="#0D1B2A" stroke="#CDB68D" stroke-width="6"/>
+  <path d="M326 328H592" stroke="#F7F4EF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M326 388H548" stroke="#F7F4EF" stroke-opacity="0.56" stroke-width="10" stroke-linecap="round"/>
+  <rect x="844" y="248" width="284" height="150" rx="24" fill="#0D1B2A" stroke="#7FB0FF" stroke-width="6"/>
+  <circle cx="986" cy="324" r="38" fill="#13263A" stroke="#F7F4EF" stroke-width="8"/>
+  <path d="M986 304V344" stroke="#F7F4EF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M934 470C1018 520 1106 520 1186 470" stroke="#CDB68D" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <rect x="1114" y="446" width="188" height="96" rx="22" fill="#0D1B2A" stroke="#CDB68D" stroke-width="6"/>
+  <path d="M1162 494H1254" stroke="#F7F4EF" stroke-width="10" stroke-linecap="round"/>
+  <text x="180" y="760" fill="#F7F4EF" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700">TRUST BOUNDARY</text>
+  <text x="180" y="832" fill="#9FB3C9" font-family="Segoe UI, Arial, sans-serif" font-size="34">Agreed surfaces only. Read-only preferred. Clean closeout.</text>
+</svg>
