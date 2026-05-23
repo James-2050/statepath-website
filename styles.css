@@ -9548,6 +9548,57 @@ body.sp2-homepage .sp2-home-title-group .sp2-actions .sp2-button {
   }
 }
 
+/* --- 2026-05-22 asset refresh fix: allow themed homepage hero backgrounds to render --- */
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-full,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-full,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  pointer-events: none !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark {
+  visibility: hidden !important;
+}
+
+html[data-effective-theme="light"] body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light,
+html[data-effective-theme="light"] body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light {
+  display: block !important;
+  visibility: visible !important;
+}
+
+html[data-effective-theme="light"] body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark,
+html[data-effective-theme="light"] body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+html[data-effective-theme="dark"] body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light,
+html[data-effective-theme="dark"] body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-light {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+html[data-effective-theme="dark"] body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark,
+html[data-effective-theme="dark"] body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command > .sp2-home-banner-image-dark {
+  display: block !important;
+  visibility: visible !important;
+}
+
 /* ========================================================================== 
    Phase 4 — visual worlds and asset rules
    ========================================================================== */
@@ -10134,6 +10185,150 @@ body.sp2-homepage .sp2-hero-note {
   }
 }
 
+/* --- 2026-05-23 FINAL live homepage authority lock: full-page background + transparent outer hero --- */
+
+html[data-effective-theme="dark"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    url("./assets/statepath-hero-background-dark.png") center center / cover no-repeat fixed !important;
+}
+
+html[data-effective-theme="light"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(246, 242, 234, 0.16), rgba(246, 242, 234, 0.16)),
+    url("./assets/statepath-hero-background-light.png") center center / cover no-repeat fixed !important;
+  color: #0f1b27 !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero-home-command {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero-home-command::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+body.sp2-homepage .sp2-home-banner-image,
+body.sp2-homepage .sp2-home-banner-image-full,
+body.sp2-homepage .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-home-banner-image-dark {
+  display: none !important;
+}
+
+/* --- 2026-05-23 live homepage hard lock: full-page background + transparent outer hero --- */
+
+html[data-effective-theme="dark"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    url("./assets/statepath-hero-background-dark.png") center center / cover no-repeat fixed !important;
+}
+
+html[data-effective-theme="light"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(246, 242, 234, 0.16), rgba(246, 242, 234, 0.16)),
+    url("./assets/statepath-hero-background-light.png") center center / cover no-repeat fixed !important;
+  color: #0f1b27 !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero-home-command {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero-home-command::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+body.sp2-homepage .sp2-home-banner-image,
+body.sp2-homepage .sp2-home-banner-image-full,
+body.sp2-homepage .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-home-banner-image-dark {
+  display: none !important;
+}
+
+/* --- 2026-05-22 live-route correction: use full-page theme background, not inner hero image --- */
+
+html[data-effective-theme="dark"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    url("./assets/statepath-hero-background-dark.png") center center / cover no-repeat fixed !important;
+}
+
+html[data-effective-theme="light"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(246, 242, 234, 0.22), rgba(246, 242, 234, 0.22)),
+    url("./assets/statepath-hero-background-light.png") center center / cover no-repeat fixed !important;
+  color: #0f1b27 !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+body.sp2-homepage .sp2-home-banner-image,
+body.sp2-homepage .sp2-home-banner-image-full,
+body.sp2-homepage .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-home-banner-image-dark {
+  display: none !important;
+}
+
 /* --- Phase 1 shared-system lock --- */
 
 .sp2-header-tools {
@@ -10348,4 +10543,55 @@ body.sp2-homepage .sp2-hero-note {
   body.sp2-homepage .sp2-home-title-group .sp2-actions .sp2-button {
     width: 100% !important;
   }
+}
+
+/* --- 2026-05-23 TRUE END-OF-FILE live homepage authority lock --- */
+
+html[data-effective-theme="dark"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    url("./assets/statepath-hero-background-dark.png") center center / cover no-repeat fixed !important;
+}
+
+html[data-effective-theme="light"] body.sp2-homepage {
+  background:
+    linear-gradient(rgba(246, 242, 234, 0.16), rgba(246, 242, 234, 0.16)),
+    url("./assets/statepath-hero-background-light.png") center center / cover no-repeat fixed !important;
+  color: #0f1b27 !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command,
+body.sp2-homepage .sp2-hero-home-command {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero.sp2-hero-home.sp2-hero-home-stacked.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-main > .sp2-hero.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command::before,
+body.sp2-homepage .sp2-page-home .sp2-main > .sp2-hero.sp2-hero-home-command::after,
+body.sp2-homepage .sp2-hero-home-command::before,
+body.sp2-homepage .sp2-hero-home-command::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+body.sp2-homepage .sp2-home-banner-image,
+body.sp2-homepage .sp2-home-banner-image-full,
+body.sp2-homepage .sp2-home-banner-image-light,
+body.sp2-homepage .sp2-home-banner-image-dark {
+  display: none !important;
 }
